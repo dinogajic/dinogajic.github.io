@@ -1,114 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Gajić</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6038ef2b55.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6038ef2b55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script src="js/mail.js"></script>
+  </head>
 
-<body class="bg-gray-200">
-    <div class="bg-white w-10/12 mx-auto mt-10 mb-10 p-10 text-center rounded-xl md: text-sm">
-        <header>
-            <div class="md:m-auto flex flex-wrap items-center text-base justify-center">
-                <nav class="md:m-auto flex flex-wrap items-center text-base justify-center text-xl">
-                    <a class="mr-1 mt-2 text-white bg-blue-600 rounded-xl font-semibold p-5 md:text-xl sm: text-xs"
-                        href="#" onclick="window.location.reload(true)">Dino Gajić</a>
-                    <a class="mr-1 mt-2 text-blue-800 rounded-xl font-semibold p-5 hover:bg-blue-100 md:text-xl sm: text-xs"
-                        href="#O_meni">O
-                        meni</a>
-                    <a class="mr-1 mt-2 text-blue-800 rounded-xl font-semibold p-5 hover:bg-blue-100 md:text-xl sm: text-xs"
-                        href="#Mreze">Mreže</a>
-                    <a class="mr-1 mt-2 text-blue-800 rounded-xl font-semibold p-5 hover:bg-blue-100 md:text-xl sm: text-xs"
-                        href="#Kontakt">Kontakt</a>
-                </nav>
+  <body class="bg-gray-200">
+    <div
+      class="
+        bg-white
+        w-10/12
+        mx-auto
+        mt-10
+        mb-10
+        p-10
+        text-center
+        rounded-xl
+        md:
+        text-sm
+      "
+    >
+      <header>
+        <div
+          class="md:m-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <nav
+            class="
+              md:m-auto
+              flex flex-wrap
+              items-center
+              text-base
+              justify-center
+              text-xl
+            "
+          >
+            <a
+              class="
+                mr-1
+                mt-2
+                text-white
+                bg-blue-600
+                rounded-xl
+                font-semibold
+                p-5
+                md:text-xl
+                sm:
+                text-xs
+              "
+              href="#"
+              onclick="window.location.reload(true)"
+              >Dino Gajić</a
+            >
+            <a
+              class="
+                mr-1
+                mt-2
+                text-blue-800
+                rounded-xl
+                font-semibold
+                p-5
+                hover:bg-blue-100
+                md:text-xl
+                sm:
+                text-xs
+              "
+              href="#O_meni"
+              >O meni</a
+            >
+            <a
+              class="
+                mr-1
+                mt-2
+                text-blue-800
+                rounded-xl
+                font-semibold
+                p-5
+                hover:bg-blue-100
+                md:text-xl
+                sm:
+                text-xs
+              "
+              href="#Mreze"
+              >Mreže</a
+            >
+            <a
+              class="
+                mr-1
+                mt-2
+                text-blue-800
+                rounded-xl
+                font-semibold
+                p-5
+                hover:bg-blue-100
+                md:text-xl
+                sm:
+                text-xs
+              "
+              href="#Kontakt"
+              >Kontakt</a
+            >
+          </nav>
+        </div>
+      </header>
+      <section id="O_meni">
+        <img
+          src="img/default.jpg"
+          class="
+            md:w-3/12
+            m-auto
+            rounded-full
+            shadow-xl
+            border-4 border-blue-50
+            my-20
+          "
+        />
+        <h1 class="text-3xl font-bold mt-24 mb-10">Dino Gajić</h1>
+        <div
+          class="
+            my-10
+            bg-blue-100
+            lg:w-8/12
+            md:w-11/12
+            mx-auto
+            p-10
+            text-center
+            rounded-xl
+          "
+        >
+          <p class="md:text-xl sm: text-xs">
+            Moje ime je Dino Gajić i imam 22 godine. Student sam treće godine
+            preddiplomskog studija Fakulteta informatike u Puli.
+          </p>
+        </div>
+      </section>
+      <section id="Mreze">
+        <h1 class="text-3xl font-bold mt-24 mb-10">Mreže</h1>
+        <div
+          class="
+            mx-auto
+            text-center text-8xl
+            mt-10
+            text-yellow-400
+            cursor-default
+          "
+        >
+          <i
+            onclick="window.open('https://facebook.com/dino.gajic.5')"
+            class="
+              fab
+              fa-facebook
+              text-blue-600
+              hover:text-blue-900
+              transition-colors
+              cursor-pointer
+            "
+          ></i>
+          <i
+            onclick="window.open('https://instagram.com/dinogajic')"
+            class="
+              fab
+              fa-instagram
+              text-pink-600
+              hover:text-purple-700
+              transition-colors
+              cursor-pointer
+            "
+          ></i>
+          <i
+            onclick="window.open('https://github.com/dinogajic')"
+            class="
+              fab
+              fa-github
+              text-black
+              hover:text-gray-700
+              transition-colors
+              cursor-pointer
+            "
+          ></i>
+        </div>
+      </section>
+      <section id="Kontakt">
+        <h1 class="text-3xl font-bold mt-24 mb-10">Kontakt</h1>
+        <form class="w-full max-w-lg mx-auto" id="contact-form">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="
+                  block
+                  uppercase
+                  tracking-wide
+                  text-gray-700 text-xs
+                  font-bold
+                  mb-2
+                "
+              >
+              </label>
+              <input
+                class="
+                  appearance-none
+                  block
+                  w-full
+                  bg-gray-200
+                  text-gray-700
+                  border border-grey-200
+                  rounded
+                  py-3
+                  px-4
+                  mb-3
+                  leading-tight
+                  focus:outline-none focus:bg-white
+                "
+                name="firstname"
+                type="text"
+                placeholder="Ime"
+              />
             </div>
-
-        </header>
-        <section id="O_meni">
-            <img src="img/default.jpg" class="md:w-3/12  m-auto rounded-full shadow-xl border-4 border-blue-50 my-20">
-            <h1 class="text-3xl font-bold mt-24 mb-10 ">Dino Gajić</h1>
-            <div class="my-10 bg-blue-100 lg:w-8/12 md:w-11/12 mx-auto p-10 text-center rounded-xl">
-                <p class="md:text-xl sm: text-xs">Moje ime je Dino Gajić i imam 22 godine. Student sam
-                    treće godine
-                    preddiplomskog
-                    studija Fakulteta informatike u Puli.
-                </p>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="
+                  block
+                  uppercase
+                  tracking-wide
+                  text-gray-700 text-xs
+                  font-bold
+                  mb-2
+                "
+              >
+              </label>
+              <input
+                class="
+                  appearance-none
+                  block
+                  w-full
+                  bg-gray-200
+                  text-gray-700
+                  border border-gray-200
+                  rounded
+                  py-3
+                  px-4
+                  leading-tight
+                  focus:outline-none focus:bg-white focus:border-gray-500
+                "
+                name="lastname"
+                type="text"
+                placeholder="Prezime"
+              />
             </div>
-        </section>
-        <section id="Mreze">
-            <h1 class="text-3xl font-bold mt-24 mb-10">Mreže</h1>
-            <div class="mx-auto text-center text-8xl mt-10 text-yellow-400 cursor-default">
-                <i onclick="window.open('https://facebook.com/dino.gajic.5')"
-                    class="fab fa-facebook text-blue-600 hover:text-blue-900 transition-colors cursor-pointer"></i>
-                <i onclick="window.open('https://instagram.com/dinogajic')"
-                    class="fab fa-instagram text-pink-600 hover:text-purple-700 transition-colors cursor-pointer"></i>
-                <i onclick="window.open('https://github.com/dinogajic')"
-                    class="fab fa-github text-black hover:text-gray-700 transition-colors cursor-pointer"></i>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="
+                  block
+                  uppercase
+                  tracking-wide
+                  text-gray-700 text-xs
+                  font-bold
+                  mb-2
+                "
+              >
+              </label>
+              <input
+                class="
+                  appearance-none
+                  block
+                  w-full
+                  bg-gray-200
+                  text-gray-700
+                  border border-gray-200
+                  rounded
+                  py-3
+                  px-4
+                  mb-3
+                  leading-tight
+                  focus:outline-none focus:bg-white focus:border-gray-500
+                "
+                name="user_email"
+                id="email"
+                type="email"
+                placeholder="Email"
+              />
             </div>
-        </section>
-        <section id="Kontakt">
-            <h1 class="text-3xl font-bold mt-24 mb-10">Kontakt</h1>
-            <form class="w-full max-w-lg mx-auto">
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                        </label>
-                        <input
-                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-grey-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                            type="text" placeholder="Ime">
-                    </div>
-                    <div class="w-full md:w-1/2 px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                        </label>
-                        <input
-                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            type="text" placeholder="Prezime">
-                    </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                        </label>
-                        <input
-                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                            id="email" type="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                        </label>
-                        <textarea
-                            class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48"
-                            placeholder="Unesite poruku"></textarea>
-                    </div>
-                </div>
-                <div class="md:flex md:items-center">
-                    <div class="md:w-1/3">
-                        <!--<button class="text-blue-800 bg-gray-200 rounded-xl font-semibold p-5 hover:bg-blue-100"
-                            type="button">
-                            Pošalji
-                        </button>-->
-                        <a class="text-blue-800 bg-gray-200 rounded-xl font-semibold p-5 hover:bg-blue-100" href=""
-                            onclick="alert('Vaša poruka je uspješno poslana!'); window.location.reload(true)">Pošalji</a>
-                    </div>
-                    <div class="md:w-2/3"></div>
-                </div>
-            </form>
-
-        </section>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <label
+                class="
+                  block
+                  uppercase
+                  tracking-wide
+                  text-gray-700 text-xs
+                  font-bold
+                  mb-2
+                "
+              >
+              </label>
+              <textarea
+                class="
+                  no-resize
+                  appearance-none
+                  block
+                  w-full
+                  bg-gray-200
+                  text-gray-700
+                  border border-gray-200
+                  rounded
+                  py-3
+                  px-4
+                  mb-3
+                  leading-tight
+                  focus:outline-none focus:bg-white focus:border-gray-500
+                  h-48
+                "
+                name="message"
+                placeholder="Unesite poruku"
+              ></textarea>
+            </div>
+          </div>
+          <div class="md:flex md:items-center">
+            <div class="md:w-1/3">
+              <input class="
+              text-blue-800
+              bg-gray-200
+              rounded-xl
+              font-semibold
+              p-5
+              hover:bg-blue-100
+            " type="submit" value="Pošalji">
+            </div>
+        </form>
+      </section>
     </div>
-    <footer class="text-center">
-    </footer>
-</body>
-<style>
+    <footer class="text-center"></footer>
+  </body>
+  <style>
     html {
-        scroll-behavior: smooth;
+      scroll-behavior: smooth;
     }
-</style>
-
+  </style>
 </html>
