@@ -9,6 +9,8 @@
             event.preventDefault();
             emailjs.sendForm('service_tlmvq36', 'template_grbm3ve', this)
                 .then(function() {
+                    alert('Vaša poruka je uspješno poslana!');
+                    window.location.reload(true);
                     console.log('SUCCESS!');
                 }, function(error) {
                     console.log('FAILED...', error);
